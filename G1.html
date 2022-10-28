@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sub 2 700maps</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body onload="start(); start2()">
+        <center>
+        <h1>Idle activist</h1>
+        <h3>By 700maps</h3><br>
+        <div id="goal">0 / 7,981,385,079 influenced</div><br>
+        <div id="myguilt">0 / 100 guilt</div><br>
+
+        <!--<div id="x" style="position: absolute; height: 50px; width: 150px; top: 240px; left: 400px; background-color: red;" onclick="cheat()">cheat money</div>-->
+
+        <!--<div id="y" style="position: absolute; height: 50px; width: 150px; top: 300px; left: 400px; background-color: red;" onclick="cheat2()">lower guilt</div>-->
+
+        <div id="bulk" style="position: absolute; height: 50px; width: 150px; top: 0px; left: 400px; background-color: green;" onclick="bulk()">Purchace amount = x1</div>
+
+        <div id="" style="position: absolute; height: 50px; width: 150px; top: 60px; left: 400px; background-color: black;" onclick="">Save game</div>
+
+        <div id="" style="position: absolute; height: 50px; width: 150px; top: 120px; left: 400px; background-color: black;" onclick="">Load game</div>
+
+        <div id="" style="position: absolute; height: 50px; width: 150px; top: 180px; left: 400px; background-color: black;" onclick="">How to play</div>
+
+        <div id="news" style="position: absolute; height: 50px; width: 150px; top: 180px; left: 600px; background-color: black;" onclick="newsup()">News</div>
+
+        <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div id="gen1" style="position: absolute; height: 50px; width: 150px; top: 0px; left: 0px; background-color: rosybrown;" onclick="addbase()">Social media rant (click)</div>
+
+        <div id="gen2" style="position: absolute; height: 50px; width: 150px; top: 60px; left: 0px; background-color: blue;" onclick="add01()">Video (10IN)</div>
+
+        <div id="gen3" style="position: absolute; height: 50px; width: 150px; top: 120px; left: 0px; background-color: purple;" onclick="add02()">Small protest (150IN)</div>
+
+        <div id="gen4" style="position: absolute; height: 50px; width: 150px; top: 180px; left: 0px; background-color: orange;" onclick="add03()">Newspaper artical (500IN)</div>
+
+        <div id="gen5" style="position: absolute; height: 50px; width: 150px; top: 240px; left: 0px; background-color: pink;" onclick="add04()">Fundraiser (5000IN)</div>
+
+        <div id="gen6" style="position: absolute; height: 50px; width: 150px; top: 300px; left: 0px; background-color: cyan;" onclick="add05()">TV appearance (10000IN)</div>
+
+        <div id="gen7" style="position: absolute; height: 50px; width: 150px; top: 360px; left: 0px; background-color: lightcoral;" onclick="add06()">Large protest (100000IN)</div>
+
+        <div id="gen8" style="position: absolute; height: 50px; width: 150px; top: 420px; left: 0px; background-color: goldenrod;" onclick="add07()">Boycott (5000000IN)</div>
+
+        <div id="gen9" style="position: absolute; height: 50px; width: 150px; top: 480px; left: 0px; background-color: blueviolet;" onclick="add08()">Political reform (10000000IN)</div>
+
+        <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div id="ofr01" style="position: absolute; height: 50px; width: 150px; top: 0px; left: 200px; background-color: rgb(255, 0, 0);" onclick="deal01()">Sell your soul</div>
+        <div id="ofr02" style="position: absolute; height: 50px; width: 150px; top: 60px; left: 200px; background-color: rgb(207, 6, 6);" onclick="deal02()">Hate clicks</div>
+        <div id="ofr03" style="position: absolute; height: 50px; width: 150px; top: 120px; left: 200px; background-color: rgb(219, 0, 0);" onclick="deal03()">pay people to show up</div>
+        <div id="ofr04" style="position: absolute; height: 50px; width: 150px; top: 180px; left: 200px; background-color: rgb(155, 0, 0);" onclick="deal04()">bribe the news</div>
+        <div id="ofr05" style="position: absolute; height: 50px; width: 150px; top: 240px; left: 200px; background-color: rgb(116, 0, 0);" onclick="deal05()">mismanage funds</div>
+        <div id="ofr06" style="position: absolute; height: 50px; width: 150px; top: 300px; left: 200px; background-color: rgb(87, 2, 2);" onclick="deal06()">blackmail the producer</div>
+        <div id="ofr07" style="position: absolute; height: 50px; width: 150px; top: 360px; left: 200px; background-color: rgb(80, 1, 1);" onclick="deal07()">destroy public property</div>
+        <div id="ofr08" style="position: absolute; height: 50px; width: 150px; top: 420px; left: 200px; background-color: rgb(66, 2, 2);" onclick="deal08()">spread false allegations</div>
+        <div id="ofr09" style="position: absolute; height: 50px; width: 150px; top: 480px; left: 200px; background-color: rgb(48, 0, 0);" onclick="deal09()">rig election</div>
+
+        <div id="counter">0</div><br>
+        <div id="upgrade01" style="opacity: 0%;">0</div> <br>
+        <div id="upgrade02" style="opacity: 0%;">0</div> <br>
+        <div id="upgrade03" style="opacity: 0%;">0</div> <br>
+        <div id="upgrade04" style="opacity: 0%;">0</div> <br>
+        <div id="upgrade05" style="opacity: 0%;">0</div> <br>
+        <div id="upgrade06" style="opacity: 0%;">0</div> <br>
+        <div id="upgrade07" style="opacity: 0%;">0</div> <br>
+        <div id="upgrade08" style="opacity: 0%;">0</div> <br>
+
+        
+
+        
+    </center>
+    <script>
+
+
+        let myClock
+        let myClock2
+
+        buynum = 1
+        guilt = 0
+        number = 0
+        u01 = 0
+        u02 = 0
+        u03 = 0
+        u04 = 0
+        u05 = 0
+        u06 = 0
+        u07 = 0
+        u08 = 0
+        u09 = 0
+
+        function start() {
+            clearInterval(myClock)
+            myClock = setInterval(function(){
+            number = number + u01
+            number = number + u02 * 5
+            number = number + u03 * 15
+            number = number + u04 * 50
+            number = number + u05 * 200
+            number = number + u06 * 500
+            number = number + u07 * 1000
+            number = number + u08 * 10000
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            document.getElementById('goal').innerHTML = number + ' / 7,981,385,079 influenced'
+            document.getElementById('myguilt').innerHTML = guilt + ' / 100 guilt'
+
+            if (number == 7981385079 || number > 7981385079) {
+                alert('You win')
+                number = 0
+            }
+            if (guilt == 100 || guilt > 100) {
+                document.write('You lost')
+            }
+        }, 1000)
+        }
+
+        function start2() {
+            clearInterval(myClock2)
+            myClock2 = setInterval(function(){
+            if (guilt > 0) {
+            guilt = guilt - 1
+            document.getElementById('myguilt').innerHTML = guilt + ' / 100 guilt'
+            }
+        }, 10000)
+        }
+
+// 1 - 10 - 50 - 100
+        function bulk() {
+            if (buynum == 1) {
+                buynum = 2
+                document.getElementById('bulk').innerHTML = 'Purchace amount = x10'
+            } else if (buynum == 2) {
+                buynum = 3
+                document.getElementById('bulk').innerHTML = 'Purchace amount = x50'
+            } else if (buynum == 3) {
+                buynum = 4
+                document.getElementById('bulk').innerHTML = 'Purchace amount = x100'
+            } else if (buynum == 4) {
+                buynum = 1
+                document.getElementById('bulk').innerHTML = 'Purchace amount = x1'
+            }
+        }
+
+        function cheat() {
+            number = number + 1000000000
+            document.getElementById('counter').innerHTML = number + ' Influence'
+        }
+
+        function cheat2() {
+            guilt = guilt - 100000
+            document.getElementById('myguilt').innerHTML = guilt + ' / 100 guilt'
+        }
+
+        function addbase() {
+            number = number + 1
+            document.getElementById('counter').innerHTML = number + ' Influence'
+        }
+
+        function deal01() {
+            if (guilt < 20) {
+            number = number + 1000
+            guilt = guilt + 80
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (guilt > 20 || guilt == 20) {
+                alert('You are too guilty')
+            }
+        }
+
+        function deal02() {
+            if (guilt < 80 && u01 > 0) {
+            number = number + 500
+            guilt = guilt + 20
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (guilt > 80 || guilt == 80) {
+                alert('You are too guilty')
+            } else if (u01 < 1) {
+                alert('You need to buy this upgrade first')
+            }
+        }
+
+        function deal03() {
+            if (guilt < 60 && u02 > 0) {
+            number = number + 1000
+            guilt = guilt + 40
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (guilt > 60 || guilt == 60) {
+                alert('You are too guilty')
+            } else if (u02 < 1) {
+                alert('You need to buy this upgrade first')
+            }
+        }
+
+        function deal04() {
+            if (guilt < 40 && u03 > 0) {
+            number = number + 5000
+            guilt = guilt + 60
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (guilt > 40 || guilt == 40) {
+                alert('You are too guilty')
+            } else if (u03 < 1) {
+                alert('You need to buy this upgrade first')
+            }
+        }
+
+        function deal05() {
+            if (guilt < 10 && u04 > 0) {
+            number = number + 50000
+            guilt = guilt + 90
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (guilt > 90 || guilt == 90) {
+                alert('You are too guilty')
+            } else if (u04 < 1) {
+                alert('You need to buy this upgrade first')
+            }
+        }
+
+        function deal06() {
+            if (guilt < 20 && u05 > 0) {
+            number = number + 10000
+            guilt = guilt + 80
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (guilt > 80 || guilt == 80) {
+                alert('You are too guilty')
+            } else if (u05 < 1) {
+                alert('You need to buy this upgrade first')
+            }
+        }
+
+        function deal07() {
+            if (guilt < 40 && u06 > 0) {
+            number = number + 1500000
+            guilt = guilt + 60
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (guilt > 40 || guilt == 40) {
+                alert('You are too guilty')
+            } else if (u06 < 1) {
+                alert('You need to buy this upgrade first')
+            }
+        }
+
+        function deal08() {
+            if (guilt < 60 && u07 > 0) {
+            number = number + 42000000
+            guilt = guilt + 40
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (guilt > 60 || guilt == 60) {
+                alert('You are too guilty')
+            } else if (u07 < 1) {
+                alert('You need to buy this upgrade first')
+            }
+        }
+
+        function deal09() {
+            if (guilt < 100 && u08 > 0) {
+            number = number + 99999999
+            guilt = guilt + 99
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (guilt > 100 || guilt == 100) {
+                alert('You are too guilty')
+            } else if (u08 < 1) {
+                alert('You need to buy this upgrade first')
+            }
+        }
+
+        
+
+        function add01() {
+
+            if (number > 9 && buynum == 1) {
+            number = number - 10
+            u01 = u01 + 1
+            document.getElementById('upgrade01').style = style="opacity: 100%"
+            document.getElementById('upgrade01').innerHTML = u01 + ' Videos'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 10 && buynum == 1) {
+                alert('not enough')
+                document.getElementById('news').innerHTML = 'Not enough'
+            }
+            
+            if (number > 49 && buynum == 2) {
+            number = number - 50
+            u01 = u01 + 10
+            document.getElementById('upgrade01').style = style="opacity: 100%"
+            document.getElementById('upgrade01').innerHTML = u01 + ' Videos'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 50 && buynum == 2) {
+                alert('not enough')
+            }
+            
+            if (number > 499 && buynum == 3) {
+            number = number - 500
+            u01 = u01 + 50
+            document.getElementById('upgrade01').style = style="opacity: 100%"
+            document.getElementById('upgrade01').innerHTML = u01 + ' Videos'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 500 && buynum == 3) {
+                alert('not enough')
+            }
+            
+            if (number > 999 && buynum == 4) {
+            number = number - 1000
+            u01 = u01 + 100
+            document.getElementById('upgrade01').style = style="opacity: 100%"
+            document.getElementById('upgrade01').innerHTML = u01 + ' Videos'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 1000 && buynum == 4) {
+                alert('not enough')
+            }
+        }
+
+        function add02() {
+
+            if (number > 149 && buynum == 1) {
+            number = number - 150
+            u02 = u02 + 1
+            document.getElementById('upgrade02').style = style="opacity: 100%"
+            document.getElementById('upgrade02').innerHTML = u02 + ' Protests'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 150 && buynum == 1) {
+                alert('Not enough')
+            }
+
+            if (number > 1499 && buynum == 2) {
+            number = number - 1500
+            u02 = u02 + 10
+            document.getElementById('upgrade02').style = style="opacity: 100%"
+            document.getElementById('upgrade02').innerHTML = u02 + ' Protests'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 1500 && buynum == 2) {
+                alert('Not enough')
+            }
+
+            if (number > 7499 && buynum == 3) {
+            number = number - 7500
+            u02 = u02 + 50
+            document.getElementById('upgrade02').style = style="opacity: 100%"
+            document.getElementById('upgrade02').innerHTML = u02 + ' Protests'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 7500 && buynum == 3) {
+                alert('Not enough')
+            }
+
+            if (number > 14999 && buynum == 4) {
+            number = number - 15000
+            u02 = u02 + 100
+            document.getElementById('upgrade02').style = style="opacity: 100%"
+            document.getElementById('upgrade02').innerHTML = u02 + ' Protests'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 15000 && buynum == 4) {
+                alert('Not enough')
+            }
+        }
+
+        function add03() {
+            if (number > 499 && buynum == 1) {
+            number = number - 500
+            u03 = u03 + 1
+            document.getElementById('upgrade03').style = style="opacity: 100%"
+            document.getElementById('upgrade03').innerHTML = u03 + ' Newspaper articals'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 500 && buynum == 1) {
+                alert('Not enough')
+            }
+
+            if (number > 4999 && buynum == 2) {
+            number = number - 5000
+            u03 = u03 + 10
+            document.getElementById('upgrade03').style = style="opacity: 100%"
+            document.getElementById('upgrade03').innerHTML = u03 + ' Newspaper articals'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 5000 && buynum == 2) {
+                alert('Not enough')
+            }
+
+            if (number > 24999 && buynum == 3) {
+            number = number - 25000
+            u03 = u03 + 50
+            document.getElementById('upgrade03').style = style="opacity: 100%"
+            document.getElementById('upgrade03').innerHTML = u03 + ' Newspaper articals'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 25000 && buynum == 3) {
+                alert('Not enough')
+            }
+
+            if (number > 49999 && buynum == 4) {
+            number = number - 50000
+            u03 = u03 + 100
+            document.getElementById('upgrade03').style = style="opacity: 100%"
+            document.getElementById('upgrade03').innerHTML = u03 + ' Newspaper articals'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 50000 && buynum == 4) {
+                alert('Not enough')
+            }
+
+        }
+
+        function add04() {
+            if (number > 4999 && buynum == 1) {
+            number = number - 5000
+            u04 = u04 + 1
+            document.getElementById('upgrade04').style = style="opacity: 100%"
+            document.getElementById('upgrade04').innerHTML = u04 + ' Fundraisers'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 5000 && buynum == 1) {
+                alert('Not enough')
+            }
+
+            if (number > 49999 && buynum == 2) {
+            number = number - 50000
+            u04 = u04 + 10
+            document.getElementById('upgrade04').style = style="opacity: 100%"
+            document.getElementById('upgrade04').innerHTML = u04 + ' Fundraisers'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 50000 && buynum == 2) {
+                alert('Not enough')
+            }
+
+            if (number > 249999 && buynum == 3) {
+            number = number - 250000
+            u04 = u04 + 50
+            document.getElementById('upgrade04').style = style="opacity: 100%"
+            document.getElementById('upgrade04').innerHTML = u04 + ' Fundraisers'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 250000 && buynum == 3) {
+                alert('Not enough')
+            }
+
+            if (number > 499999 && buynum == 4) {
+            number = number - 500000
+            u04 = u04 + 100
+            document.getElementById('upgrade04').style = style="opacity: 100%"
+            document.getElementById('upgrade04').innerHTML = u04 + ' Fundraisers'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 500000 && buynum == 4) {
+                alert('Not enough')
+            }
+        }
+        
+        function add05() {
+            if (number > 9999 && buynum == 1) {
+            number = number - 10000
+            u05 = u05 + 1
+            document.getElementById('upgrade05').style = style="opacity: 100%"
+            document.getElementById('upgrade05').innerHTML = u05 + ' TV appearances'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 10000 && buynum == 1) {
+                alert('Not enough')
+            }
+
+            if (number > 99999 && buynum == 2) {
+            number = number - 100000
+            u05 = u05 + 10
+            document.getElementById('upgrade05').style = style="opacity: 100%"
+            document.getElementById('upgrade05').innerHTML = u05 + ' TV appearances'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 100000 && buynum == 2) {
+                alert('Not enough')
+            }
+
+            if (number > 499999 && buynum == 3) {
+            number = number - 500000
+            u05 = u05 + 50
+            document.getElementById('upgrade05').style = style="opacity: 100%"
+            document.getElementById('upgrade05').innerHTML = u05 + ' TV appearances'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 500000 && buynum == 3) {
+                alert('Not enough')
+            }
+
+            if (number > 999999 && buynum == 4) {
+            number = number - 1000000
+            u05 = u05 + 100
+            document.getElementById('upgrade05').style = style="opacity: 100%"
+            document.getElementById('upgrade05').innerHTML = u05 + ' TV appearances'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 1000000 && buynum == 4) {
+                alert('Not enough')
+            }
+        }
+
+        function add06() {
+            if (number > 99999 && buynum == 1) {
+            number = number - 100000
+            u06 = u06 + 1
+            document.getElementById('upgrade06').style = style="opacity: 100%"
+            document.getElementById('upgrade06').innerHTML = u06 + ' Large protests'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 100000 && buynum == 1) {
+                alert('Not enough')
+            }
+
+            if (number > 999999 && buynum == 2) {
+            number = number - 1000000
+            u06 = u06 + 10
+            document.getElementById('upgrade06').style = style="opacity: 100%"
+            document.getElementById('upgrade06').innerHTML = u06 + ' Large protests'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 1000000 && buynum == 2) {
+                alert('Not enough')
+            }
+
+            if (number > 4999999 && buynum == 3) {
+            number = number - 5000000
+            u06 = u06 + 50
+            document.getElementById('upgrade06').style = style="opacity: 100%"
+            document.getElementById('upgrade06').innerHTML = u06 + ' Large protests'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 5000000 && buynum == 3) {
+                alert('Not enough')
+            }
+
+            if (number > 9999999 && buynum == 4) {
+            number = number - 10000000
+            u06 = u06 + 100
+            document.getElementById('upgrade06').style = style="opacity: 100%"
+            document.getElementById('upgrade06').innerHTML = u06 + ' Large protests'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 10000000 && buynum == 4) {
+                alert('Not enough')
+            }
+        }
+
+        function add07() {
+            if (number > 4999999 && buynum == 1) {
+            number = number - 5000000
+            u07 = u07 + 1
+            document.getElementById('upgrade07').style = style="opacity: 100%"
+            document.getElementById('upgrade07').innerHTML = u07 + ' Boycotts'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 5000000 && buynum == 1) {
+                alert('Not enough')
+            }
+
+            if (number > 49999999 && buynum == 2) {
+            number = number - 50000000
+            u07 = u07 + 10
+            document.getElementById('upgrade07').style = style="opacity: 100%"
+            document.getElementById('upgrade07').innerHTML = u07 + ' Boycotts'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 50000000 && buynum == 2) {
+                alert('Not enough')
+            }
+
+            if (number > 249999999 && buynum == 3) {
+            number = number - 250000000
+            u07 = u07 + 50
+            document.getElementById('upgrade07').style = style="opacity: 100%"
+            document.getElementById('upgrade07').innerHTML = u07 + ' Boycotts'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 250000000 && buynum == 3) {
+                alert('Not enough')
+            }
+
+            if (number > 499999999 && buynum == 4) {
+            number = number - 500000000
+            u07 = u07 + 100
+            document.getElementById('upgrade07').style = style="opacity: 100%"
+            document.getElementById('upgrade07').innerHTML = u07 + ' Boycotts'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 500000000 && buynum == 4) {
+                alert('Not enough')
+            }
+        }
+
+        function add08() {
+            if (number > 9999999 && buynum == 1) {
+            number = number - 10000000
+            u08 = u08 + 1
+            document.getElementById('upgrade08').style = style="opacity: 100%"
+            document.getElementById('upgrade08').innerHTML = u08 + ' politicians reformed'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 10000000 && buynum == 1) {
+                alert('Not enough')
+            }
+
+            if (number > 99999999 && buynum == 2) {
+            number = number - 100000000
+            u08 = u08 + 10
+            document.getElementById('upgrade08').style = style="opacity: 100%"
+            document.getElementById('upgrade08').innerHTML = u08 + ' politicians reformed'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 100000000 && buynum == 2) {
+                alert('Not enough')
+            }
+
+            if (number > 499999999 && buynum == 3) {
+            number = number - 500000000
+            u08 = u08 + 50
+            document.getElementById('upgrade08').style = style="opacity: 100%"
+            document.getElementById('upgrade08').innerHTML = u08 + ' politicians reformed'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 500000000 && buynum == 3) {
+                alert('Not enough')
+            }
+
+            if (number > 999999999 && buynum == 4) {
+            number = number - 1000000000
+            u08 = u08 + 100
+            document.getElementById('upgrade08').style = style="opacity: 100%"
+            document.getElementById('upgrade08').innerHTML = u08 + ' politicians reformed'
+            document.getElementById('counter').innerHTML = number + ' Influence'
+            } else if (number < 1000000000 && buynum == 4) {
+                alert('Not enough')
+            }
+        }
+
+        
+    </script>
+    </body>
+</html>
