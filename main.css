@@ -1,0 +1,45 @@
+html {
+    font-size: 22px
+}
+
+body {
+    color: white;
+    background-color: grey;
+}
+
+a {
+    color: red;
+}
+
+a:hover, a:active {
+    color: white;
+}
+
+a:visited {
+    color: darkred;
+}
+
+.gen {
+    font-size: 23px;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 5px solid black;
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.counter {
+    font-size: 60;
+    font-family: cursive;
+    color: black;
+    border: 0px;
+    cursor: default;
+    position: absolute;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
