@@ -1,2 +1,2 @@
 # 77
-## https://yo7xx.github.io/77/index.html
+## https://700maps.github.io/77/index.html
