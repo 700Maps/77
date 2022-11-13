@@ -1,0 +1,36 @@
+<h4>version 0.0.1 <h4>
+
+<h2 align=center>xx</h2>
+
+
+
+
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+<script>
+    function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,fr,de,ru', layout:google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+
+    }
+</script>
+
+	
+<input type=button value="Change frase" onclick="{
+					      document.getElementById('google_translate_element').innerHTML = document.getElementById('myText01').value
+					      }"><br>
+
+<input type=text id="myText01" value="here">
+
+<div id="google_translate_element">this is the thing said</div><br>
+
+
+<input  type="button" value="speek:UK English Female" onclick="{  
+   let myVoice = 'UK English Female'
+   responsiveVoice.speak(document.getElementById('google_translate_element').innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
+}">
+	
+<input  type="button" value="Russian Female" onclick="{  
+   let myVoice = 'Russian Female'
+   responsiveVoice.speak(document.getElementById('google_translate_element').innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
+}">
